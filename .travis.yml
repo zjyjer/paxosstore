@@ -12,7 +12,10 @@ script:
 # For certain.
     - cd certain; sh build.sh; cd ..;
 # For paxoskv.
-# (TODO)
+    - cd paxoskv
+    - mkdir build
+    - cd build
+    - cmake .. && make
 
 notifications:
     email: true
