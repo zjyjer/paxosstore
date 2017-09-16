@@ -1,5 +1,6 @@
-set +x
+set +ex
 
-./install_protobuf.sh
-./install_snappy.sh
-./install_leveldb.sh
+base_dir=$(cd `dirname $0`;pwd)
+$base_dir/install_protobuf.sh
+$base_dir/install_snappy.sh
+$base_dir/install_leveldb.sh

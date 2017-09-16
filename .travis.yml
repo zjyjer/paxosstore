@@ -9,9 +9,7 @@ git:
     submodules: true
 
 install: 
-    - cd paxoskv
-    - ./dependency_tools/install_dependencies.sh 
-    - cd ${TRAVIS_BUILD_DIR}
+    - ${TRAVIS_BUILD_DIR}/paxoskv/dependency_tools/install_dependencies.sh 
 
 script:
 # For certain.
