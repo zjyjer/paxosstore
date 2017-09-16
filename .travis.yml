@@ -6,7 +6,9 @@ language: cpp
 compiler: g++
 
 git:
-    submodules: false
+    submodules: true
+
+install: cd paxoskv/dependency_tools; ./install_dependencies.sh 
 
 script:
 # For certain.
