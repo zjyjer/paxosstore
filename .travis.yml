@@ -8,7 +8,10 @@ compiler: g++
 git:
     submodules: true
 
-install: cd paxoskv/dependency_tools; ./install_dependencies.sh 
+install: 
+    - cd paxoskv/dependency_tools
+    - ./install_dependencies.sh 
+    - cd ${TRAVIS_BUILD_DIR}
 
 script:
 # For certain.
